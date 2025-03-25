@@ -13,5 +13,6 @@ public class TestCompte {
 
         System.out.println(jbezosAccount.getNumeroCompte()+ " " + jbezosAccount.getSoldeCompte());
 
+        System.out.println(jbezosAccount);
     }
 }

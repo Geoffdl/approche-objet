@@ -1,4 +1,7 @@
 package fr.diginamic.encapsulation;
+
+import java.util.StringJoiner;
+
 /*
 1) Créez un module encapsulation.py
 2) Dans ce module créez la classe Compte en respectant les règles de
@@ -36,5 +39,13 @@ public class Compte {
 
     public void setSoldeCompte(int soldeCompte) {
         this.soldeCompte = soldeCompte;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Compte.class.getSimpleName() + "[", "]")
+                .add("numeroCompte=" + numeroCompte)
+                .add("soldeCompte=" + soldeCompte)
+                .toString();
     }
 }
