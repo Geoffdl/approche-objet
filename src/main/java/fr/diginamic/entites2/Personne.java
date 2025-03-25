@@ -42,6 +42,11 @@ public class Personne {
     public void displayAdresse(){
         System.out.println(this.adresse.numeroRue + " " + this.adresse.libelleRue + ", " + this.adresse.codePostal + " " + this.adresse.ville);
     }
+
+    public String toString(){
+        return nom+" "+prenom+" "+adresse;
+    }
+
     public AdressePostale getAdresse(){
         return this.adresse;
     }
