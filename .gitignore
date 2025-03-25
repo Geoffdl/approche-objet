@@ -94,6 +94,8 @@ $RECYCLE.BIN/
 .idea
 *.idea
 /.idea
+pom.xml
+*.xml
 
 ### Game Specific ###
 # High score files or save data (if you implement these)
