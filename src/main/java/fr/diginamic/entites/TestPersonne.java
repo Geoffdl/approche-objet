@@ -41,8 +41,10 @@ public class TestPersonne {
         adresse = new AdressePostale(10, "rue Example", "Ville", 12345);
         john.setAdresse(adresse);
 
-        john.getAdresse();
+        System.out.println(john.getAdresse().toString());
         System.out.println(adresse);
+
+        john.displayAdresse();
 
 
     }

@@ -39,6 +39,9 @@ public class Personne {
         this.adresse = adresse;
     }
 
+    public void displayAdresse(){
+        System.out.println(this.adresse.numeroRue + " " + this.adresse.libelleRue + ", " + this.adresse.codePostal + " " + this.adresse.ville);
+    }
     public AdressePostale getAdresse(){
         return this.adresse;
     }
