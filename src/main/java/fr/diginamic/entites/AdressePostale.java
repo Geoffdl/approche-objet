@@ -1,20 +1,18 @@
 package fr.diginamic.entites;
 
-
 public class AdressePostale {
+    public int numeroRue;
+    public String libelleRue;
+    public int codePostal;
+    public String ville;
 
-    int numeroRue;
-    String libelleRue;
-    int codePostal;
-    String ville;
+
 
     public AdressePostale(int numeroRue, String libelleRue, String ville, int codePostal) {
         this.numeroRue = numeroRue;
         this.libelleRue = libelleRue;
         this.ville = ville;
         this.codePostal = codePostal;
-
     }
-
 
 }
