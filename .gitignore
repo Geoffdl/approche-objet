@@ -94,7 +94,7 @@ $RECYCLE.BIN/
 .idea
 *.idea
 /.idea
-pom.xml
+
 *.xml
 *.csv
 ### Game Specific ###
