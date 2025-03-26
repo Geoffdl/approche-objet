@@ -20,5 +20,13 @@ public class TestEqualsPays {
         }
 
      */
+
+//        Integer a= 200; // integer pool jusqu'à 127
+//        Integer b= 200;
+//        if(a==b){
+//            System.out.println("EGAL");
+//        } else {
+//            System.out.println("DIFF");
+//        }
     }
 }

@@ -1,8 +1,10 @@
 package fr.diginamic.pays;
 
+import java.util.Objects;
 import java.util.StringJoiner;
 
 public class Pays {
+    private int id; // generalement un id est ajouté aux classes, il est unique
     public String nom;
     public int population;
 
@@ -34,17 +36,14 @@ public class Pays {
                 .add("population=" + population)
                 .toString();
     }
+
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
+        if (obj instanceof Pays autre) {
+            return Objects.equals(this.nom, autre.getNom()) && this.population == autre.getPopulation();
         }
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-        Pays pays = (Pays) obj;
-        return population == pays.population &&
-                nom.equals(pays.nom);
+        return false;
     }
+
 
 }
