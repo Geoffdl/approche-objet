@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class TestListeInt {
-    public static void main(String[] args) {
+public class TestListeInt
+{
+    public static void main(String[] args)
+    {
 
         ArrayList<Integer> a = new ArrayList<>();
         a.add(-1);
@@ -18,23 +20,25 @@ public class TestListeInt {
         a.add(5);
 
         /*Display all + size*/
-        System.out.println("My array list: "+ a);
-        System.out.println("Is of size : "+a.size());
+        System.out.println("My array list: " + a);
+        System.out.println("Is of size : " + a.size());
 
         //Find largest
         Collections.sort(a);
-        System.out.println("My sorted array list : "+a);
-        System.out.println("My biggest item : "+a.getLast());
+        System.out.println("My sorted array list : " + a);
+        System.out.println("My biggest item : " + a.getLast());
 
         //remove smallest
         a.removeFirst();
-        System.out.println("tiniest removed : "+a);
-        for(int i = 0; i < a.size(); i++){
-            if(a.get(i)<0){
+        System.out.println("tiniest removed : " + a);
+        for (int i = 0; i < a.size(); i++)
+        {
+            if (a.get(i) < 0)
+            {
                 a.set(i, a.get(i) * -1);
             }
         }
-        System.out.println("negatives are now postives"+a);
+        System.out.println("negatives are now postives" + a);
 
     }
 }

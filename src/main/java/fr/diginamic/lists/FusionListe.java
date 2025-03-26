@@ -2,8 +2,10 @@ package fr.diginamic.lists;
 
 import java.util.ArrayList;
 
-public class FusionListe {
-    public static void main(String[] args) {
+public class FusionListe
+{
+    public static void main(String[] args)
+    {
 
         ArrayList<String> liste1 = new ArrayList<String>();
         liste1.add("Rouge");
@@ -16,7 +18,8 @@ public class FusionListe {
 
         ArrayList<String> liste3 = new ArrayList<String>();
 
-        for(int i = 0; i < liste1.size() ; i++){
+        for (int i = 0; i < liste1.size(); i++)
+        {
             String data1 = liste1.get(i);
             liste3.add(data1);
             liste3.add(liste2.get(i));

@@ -15,34 +15,41 @@ c. Les getters / setters sous la forme de properties
 4) Modifiez le numéro de solde et le numéro de compte en utilisant les setters
 5) Affichez les attributs du compte en utilisant les getters.
  */
-public class Compte {
+public class Compte
+{
     private int numeroCompte;
     private int soldeCompte;
 
 
-    public Compte(int numeroCompte, int soldeCompte) {
+    public Compte(int numeroCompte, int soldeCompte)
+    {
         this.numeroCompte = numeroCompte;
         this.soldeCompte = soldeCompte;
     }
 
-    public int getNumeroCompte() {
+    public int getNumeroCompte()
+    {
         return numeroCompte;
     }
 
-    public void setNumeroCompte(int numeroCompte) {
+    public void setNumeroCompte(int numeroCompte)
+    {
         this.numeroCompte = numeroCompte;
     }
 
-    public int getSoldeCompte() {
+    public int getSoldeCompte()
+    {
         return soldeCompte;
     }
 
-    public void setSoldeCompte(int soldeCompte) {
+    public void setSoldeCompte(int soldeCompte)
+    {
         this.soldeCompte = soldeCompte;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return new StringJoiner(", ", Compte.class.getSimpleName() + "[", "]")
                 .add("numeroCompte=" + numeroCompte)
                 .add("soldeCompte=" + soldeCompte)

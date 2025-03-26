@@ -46,10 +46,10 @@ public class LectureFichier {
             String population = tokens[9].trim().replace(" ", "");
 
             Ville ville = new Ville(
-                    tokens[6].trim(),                    // name (Nom de la commune)
-                    Integer.parseInt(tokens[2].trim()),  // departmentCode (Code département)
-                    tokens[1].trim(),                    // regionName (Nom de la région)
-                    Integer.parseInt(population)         // inhabitants (Population totale)
+                    tokens[6].trim(),
+                    Integer.parseInt(tokens[2].trim()),
+                    tokens[1].trim(),
+                    Integer.parseInt(population)
             );
             cities.add(ville);
         }
