@@ -99,7 +99,7 @@ mvnw
 mvnw.cmd
 *.xml
 maven-wrapper.properties
-
+/.mvn
 *.csv
 ### Game Specific ###
 # High score files or save data (if you implement these)
