@@ -96,7 +96,7 @@ $RECYCLE.BIN/
 /.idea
 pom.xml
 *.xml
-
+*.csv
 ### Game Specific ###
 # High score files or save data (if you implement these)
 *.sav
