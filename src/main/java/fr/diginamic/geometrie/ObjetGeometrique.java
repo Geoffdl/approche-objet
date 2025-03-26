@@ -1,4 +1,4 @@
-package fr.diginamic.interfaces;
+package fr.diginamic.geometrie;
 
 /** List les méthodes obligatoires que doit posséder un objet géométrique
  * @author DIGINAMIC

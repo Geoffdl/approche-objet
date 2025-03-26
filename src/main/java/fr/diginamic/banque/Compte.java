@@ -1,4 +1,4 @@
-package fr.diginamic.encapsulation;
+package fr.diginamic.banque;
 
 import java.util.StringJoiner;
 

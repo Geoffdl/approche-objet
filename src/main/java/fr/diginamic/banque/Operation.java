@@ -1,4 +1,4 @@
-package fr.diginamic.encapsulation.operation;
+package fr.diginamic.banque;
 
 public abstract class Operation {
     private String date;

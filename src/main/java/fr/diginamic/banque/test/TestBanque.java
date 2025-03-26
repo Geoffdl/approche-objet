@@ -1,4 +1,7 @@
-package fr.diginamic.encapsulation;
+package fr.diginamic.banque.test;
+
+import fr.diginamic.banque.Compte;
+import fr.diginamic.banque.CompteTaux;
 
 import static java.lang.Integer.MAX_VALUE;
 

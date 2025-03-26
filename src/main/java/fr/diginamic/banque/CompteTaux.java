@@ -1,8 +1,6 @@
-package fr.diginamic.encapsulation;
+package fr.diginamic.banque;
 
-import java.util.StringJoiner;
-
-public class CompteTaux extends Compte{
+public class CompteTaux extends Compte {
 
     private int tauxRemuneration;
 

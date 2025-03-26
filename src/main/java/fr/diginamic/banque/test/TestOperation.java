@@ -1,8 +1,8 @@
-package fr.diginamic.encapsulation.test;
+package fr.diginamic.banque.test;
 
-import fr.diginamic.encapsulation.operation.Credit;
-import fr.diginamic.encapsulation.operation.Debit;
-import fr.diginamic.encapsulation.operation.Operation;
+import fr.diginamic.banque.Credit;
+import fr.diginamic.banque.Debit;
+import fr.diginamic.banque.Operation;
 
 import java.util.Objects;
 

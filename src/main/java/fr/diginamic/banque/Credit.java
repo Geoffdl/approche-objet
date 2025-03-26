@@ -1,4 +1,4 @@
-package fr.diginamic.encapsulation.operation;
+package fr.diginamic.banque;
 
 public class Credit extends Operation{
     public Credit(String date, double amount) {

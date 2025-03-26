@@ -1,6 +1,4 @@
-package fr.diginamic.equals;
-
-import java.util.Objects;
+package fr.diginamic.pays;
 
 public class TestEqualsPays {
     public static void main(String[] args) {

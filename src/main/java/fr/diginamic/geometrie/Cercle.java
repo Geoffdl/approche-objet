@@ -1,4 +1,4 @@
-package fr.diginamic.interfaces;
+package fr.diginamic.geometrie;
 
 public class Cercle implements ObjetGeometrique {
     private double rayon;

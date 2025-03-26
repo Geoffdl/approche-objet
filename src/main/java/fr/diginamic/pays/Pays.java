@@ -1,4 +1,4 @@
-package fr.diginamic.equals;
+package fr.diginamic.pays;
 
 import java.util.StringJoiner;
 

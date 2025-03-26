@@ -1,4 +1,4 @@
-package fr.diginamic.interfaces;
+package fr.diginamic.geometrie;
 
 public class TestGeometrique {
     public static void main(String[] args) {
