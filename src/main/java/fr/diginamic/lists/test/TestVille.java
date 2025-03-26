@@ -59,7 +59,7 @@ public class TestVille {
         cities.removeFirst();
 
         System.out.println("Sorted by pop :\n" + cities);
-        System.out.println("The city with highest pop is: " + maxInhabitantsCity);
+        System.out.println("The city with highest pop is: " + maxInhabitantsCity.getName());
     }
 
 

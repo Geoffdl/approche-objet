@@ -34,7 +34,7 @@ public class TestOperation {
 
         double balance = 0;
 
-        /* //"if else itude" == not recommended
+        /* "if else itude" == not recommended
         for (Operation operation : operations) {
             System.out.println(operation);
             if(Objects.equals(operation.getType(), "Debit")){

@@ -1,5 +1,7 @@
 package fr.diginamic.tri;
 
+import fr.diginamic.lists.ComparatorHabitant;
+import fr.diginamic.lists.ComparatorNom;
 import fr.diginamic.lists.Ville;
 
 import java.util.ArrayList;
@@ -21,9 +23,15 @@ public class TestTri {
 
         System.out.println(cities);
 
-        Collections.sort(cities);
+//        Collections.sort(cities);
+
+        ComparatorHabitant compByPop = new ComparatorHabitant();
+        cities.sort(compByPop);
         System.out.println(cities);
 
-
+        ComparatorNom compByName = new ComparatorNom();
+        cities.sort(compByName);
+        System.out.println(cities);
     }
+
 }
