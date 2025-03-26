@@ -94,8 +94,12 @@ $RECYCLE.BIN/
 .idea
 *.idea
 /.idea
-
+*.iml
+mvnw
+mvnw.cmd
 *.xml
+maven-wrapper.properties
+
 *.csv
 ### Game Specific ###
 # High score files or save data (if you implement these)
