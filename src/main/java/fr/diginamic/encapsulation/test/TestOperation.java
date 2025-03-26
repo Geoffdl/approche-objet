@@ -7,7 +7,6 @@ import fr.diginamic.encapsulation.operation.Operation;
 import java.util.Objects;
 
 /*
-
 a. créez un tableau d’opérations avec au moins 4 opérations de crédits et de débits
 dans le tableau.
 2

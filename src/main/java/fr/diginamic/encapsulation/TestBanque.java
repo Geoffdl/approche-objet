@@ -2,7 +2,7 @@ package fr.diginamic.encapsulation;
 
 import static java.lang.Integer.MAX_VALUE;
 
-public class TestCompte {
+public class TestBanque {
     public static void main(String[] args) {
 
 
@@ -14,5 +14,15 @@ public class TestCompte {
         System.out.println(jbezosAccount.getNumeroCompte()+ " " + jbezosAccount.getSoldeCompte());
 
         System.out.println(jbezosAccount);
+
+        Compte[] cptArray = new Compte[2];
+
+        cptArray[0] = new Compte(12345, 2839283);
+        cptArray[1] = new CompteTaux(12346, 2883,222);
+
+        for(Compte cpt : cptArray){
+            System.out.println(cpt);
+        }
     }
+
 }
