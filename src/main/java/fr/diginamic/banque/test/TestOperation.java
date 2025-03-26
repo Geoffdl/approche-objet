@@ -22,11 +22,12 @@ b. Redéfinissez cette méthode dans la classe Debit pour qu’elle retourne « 
 a. si c’est une opération au débit utilisez l’opérateur « – » pour le calcul.
 b. si c’est une opération au crédit, utilisez l’opérateur « + » pour le calcul.
  */
+
 public class TestOperation {
     public static void main(String[] args) {
         Operation[] operations = new Operation[4];
 
-        operations[0] = new Credit("2024-03-25", 150.0);  // date, amount
+        operations[0] = new Credit("2024-03-25", 150.0);
         operations[1] = new Debit("2024-03-25", 50.0);
         operations[2] = new Credit("2024-03-26", 200.0);
         operations[3] = new Debit("2024-03-26", 175);

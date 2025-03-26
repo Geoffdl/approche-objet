@@ -1,4 +1,8 @@
-package fr.diginamic.geometrie;
+package fr.diginamic.geometrie.test;
+
+import fr.diginamic.geometrie.Cercle;
+import fr.diginamic.geometrie.ObjetGeometrique;
+import fr.diginamic.geometrie.Rectangle;
 
 public class TestGeometrique {
     public static void main(String[] args) {

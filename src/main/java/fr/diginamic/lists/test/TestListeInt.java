@@ -1,10 +1,10 @@
-package fr.diginamic.lists;
+package fr.diginamic.lists.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class TesteListeInt {
+public class TestListeInt {
     public static void main(String[] args) {
 
         ArrayList<Integer> a = new ArrayList<>();
