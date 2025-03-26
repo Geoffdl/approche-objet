@@ -10,7 +10,12 @@ public class Debit extends Operation {
     public String getType() {
 
         return "Debit";
-
-
     }
+
+    @Override
+    public double calcBalance(double currentBalance) {
+        return currentBalance - getAmount();
+    }
+
+
 }

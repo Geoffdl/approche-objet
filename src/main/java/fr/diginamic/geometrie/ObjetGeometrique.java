@@ -4,6 +4,9 @@ package fr.diginamic.geometrie;
  * @author DIGINAMIC
  *
  */
+/*
+Methods inside an interface are by default abstract and  public.
+ */
 public interface ObjetGeometrique {
     /** Retourne le périmètre d'une forme géométrique
      * @return double

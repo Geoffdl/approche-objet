@@ -27,20 +27,28 @@ public class TestOperation {
     public static void main(String[] args) {
         Operation[] operations = new Operation[4];
 
-        operations[0] = new Credit("2024-03-25", 150.0);
-        operations[1] = new Debit("2024-03-25", 50.0);
-        operations[2] = new Credit("2024-03-26", 200.0);
-        operations[3] = new Debit("2024-03-26", 175);
+        operations[0] = new Credit("2024-03-25", 100.0);
+        operations[1] = new Debit("2024-03-25", 100.0);
+        operations[2] = new Credit("2024-03-26", 1500.0);
+        operations[3] = new Debit("2024-03-26", 1000.0);
 
-        double sum = 10.0;
+        double balance = 0;
+
+        /* //"if else itude" == not recommended
         for (Operation operation : operations) {
-            System.out.println(operation.getType() + " " + operation.getDate() + " " + operation.getAmount());
+            System.out.println(operation);
             if(Objects.equals(operation.getType(), "Debit")){
-                sum -= operation.getAmount();
+                balance -= operation.getAmount();
             } else {
-                sum += operation.getAmount();
+                balance += operation.getAmount();
             }
+        }*/
+
+        for (Operation operation : operations) {
+            System.out.println(operation);
+            balance = operation.calcBalance(balance);
         }
-        System.out.println("\nTotal for the day is " + sum + "\u20AC");
+
+        System.out.println("\nFinal balance is " + balance + "\u20AC");
     }
 }

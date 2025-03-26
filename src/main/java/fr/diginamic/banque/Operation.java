@@ -27,5 +27,13 @@ public abstract class Operation {
 
     public abstract String getType();
 
+    public abstract double calcBalance(double amount);
 
+    @Override
+    public String toString() {
+        return "Operation{" +
+                "date='" + date + '\'' +
+                ", amount=" + amount +
+                '}';
+    }
 }

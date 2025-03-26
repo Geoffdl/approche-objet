@@ -9,4 +9,9 @@ public class Credit extends Operation{
     public String getType() {
         return "Credit";
     }
+
+    @Override
+    public double calcBalance(double currentBalance) {
+        return currentBalance + getAmount();
+    }
 }
