@@ -4,8 +4,10 @@ import fr.diginamic.operations.CalculMoyenne;
 
 import java.util.Arrays;
 
-public class TestMoyenne {
-    public static void main(String[] args) {
+public class TestMoyenne
+{
+    public static void main(String[] args)
+    {
 
         System.out.println("Test 1:");
         CalculMoyenne calc1 = new CalculMoyenne();

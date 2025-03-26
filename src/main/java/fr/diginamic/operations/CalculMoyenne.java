@@ -1,15 +1,18 @@
 package fr.diginamic.operations;
 
-public class CalculMoyenne {
+public class CalculMoyenne
+{
     private double[] arrayOfDouble;
 
 
-    public CalculMoyenne() {
+    public CalculMoyenne()
+    {
         this.arrayOfDouble = new double[0];
     }
 
 
-    public void setArrayOfDouble(double val) {
+    public void setArrayOfDouble(double val)
+    {
 
         double[] newArray = new double[arrayOfDouble.length + 1];
 
@@ -19,17 +22,20 @@ public class CalculMoyenne {
     }
 
 
-    public double calcul() {
+    public double calcul()
+    {
         double sum = 0.0;
 
-        for (double val : arrayOfDouble) {
+        for (double val : arrayOfDouble)
+        {
             sum += val;
         }
         return sum / arrayOfDouble.length;
     }
 
 
-    public double[] getArrayOfDouble() {
+    public double[] getArrayOfDouble()
+    {
         return arrayOfDouble;
     }
 }
