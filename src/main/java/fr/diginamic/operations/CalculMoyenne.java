@@ -1,5 +1,7 @@
 package fr.diginamic.operations;
 
+import java.util.Arrays;
+
 public class CalculMoyenne
 {
     private double[] arrayOfDouble;
@@ -10,15 +12,10 @@ public class CalculMoyenne
         this.arrayOfDouble = new double[0];
     }
 
-
     public void setArrayOfDouble(double val)
     {
-
-        double[] newArray = new double[arrayOfDouble.length + 1];
-
-        System.arraycopy(arrayOfDouble, 0, newArray, 0, arrayOfDouble.length);
-        newArray[arrayOfDouble.length] = val;
-        this.arrayOfDouble = newArray;
+        this.arrayOfDouble = Arrays.copyOf(arrayOfDouble, arrayOfDouble.length + 1);
+        this.arrayOfDouble[arrayOfDouble.length - 1] = val;
     }
 
 

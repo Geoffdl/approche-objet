@@ -16,8 +16,12 @@ public class TestMaison
         maison.setPiece(new Chambre(10, 0));
         maison.setPiece(new Salon(25, 0));
         maison.setPiece(new Cuisine(12, 0));
+
+        System.out.print("test null: ");
         maison.setPiece(null);
+        System.out.print("test negative values: ");
         maison.setPiece(new Salon(-12, -1));
+
 
         System.out.println(maison);
         System.out.println("Total area of my house is: " + maison.getTotalArea());

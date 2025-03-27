@@ -34,6 +34,9 @@ public abstract class Piece
     @Override
     public String toString()
     {
-        return "Piece" + "floor=" + floor + ", area=" + area + ']';
+        return "Piece{" +
+                "floor=" + floor +
+                ", area=" + area +
+                '}';
     }
 }

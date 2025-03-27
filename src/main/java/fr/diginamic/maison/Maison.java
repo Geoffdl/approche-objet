@@ -10,13 +10,12 @@ public class Maison
     {
         if (piece == null || piece.getFloor() < 0 || piece.getArea() < 0)
         {
+            System.out.println("Invalid data : A piece can't be null, be on a negative floor or have a negative surface");
             return;
         }
 
-        Piece[] newArray = new Piece[house.length + 1];
-        System.arraycopy(house, 0, newArray, 0, house.length);
-        newArray[house.length] = piece;
-        this.house = newArray;
+        this.house = Arrays.copyOf(house, house.length + 1);
+        this.house[house.length - 1] = piece;
 
     }
 

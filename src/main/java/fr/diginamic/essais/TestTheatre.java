@@ -9,9 +9,9 @@ public class TestTheatre
         Theatre t = new Theatre("Lux", 70);
 
         int i = 0;
-        while (i < 8)
+        while (i < 10)
         {
-            t.register(10, 50);
+            t.register(8, 50);
             i++;
         }
 
