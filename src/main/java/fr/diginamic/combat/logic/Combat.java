@@ -1,7 +1,9 @@
-package fr.diginamic.combat.utils;
+package fr.diginamic.combat.logic;
 
 import fr.diginamic.combat.characters.ennemies.Enemy;
 import fr.diginamic.combat.characters.player.Player;
+import fr.diginamic.combat.utils.Menu;
+import fr.diginamic.combat.utils.RandomGenerator;
 
 public class Combat
 {
@@ -54,8 +56,8 @@ public class Combat
 
             if (monsterHp > 0)
             {
-                System.out.println("Start next turn ?");
-                PlayerPrompt.askNumber();
+                Menu.combatMenu(player, enemy);
+
             }
         }
 

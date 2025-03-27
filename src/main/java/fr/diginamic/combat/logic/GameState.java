@@ -51,6 +51,10 @@ public class GameState
         {
             giveReward();
         }
+        if (wonCombat)
+        {
+            player.updateBonusDuration();
+        }
     }
 
     private void playerDied()
@@ -67,9 +71,8 @@ public class GameState
 
     private void giveReward()
     {
-        // Handle reward logic
-//        Reward reward = RandomGenerator.selectReward();
-        // Apply reward to player
+        Reward reward = RandomGenerator.selectReward();
+        reward.apply(player);
     }
 
     private void endGame()

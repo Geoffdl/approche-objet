@@ -5,9 +5,8 @@ public abstract class Items
     private String type;
     private String name;
 
-    public Items(String type, String name)
+    public Items()
     {
-        this.type = type;
-        this.name = name;
+
     }
 }

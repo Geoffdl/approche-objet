@@ -71,18 +71,14 @@ public class Menu
     public static void inventoryMenu(Player player)
     {
         System.out.println("\n=== INVENTORY ===");
-        System.out.println("Available Potions:");
-        // List potions with numbers
-        System.out.println("1-3. Use Potion");
-        System.out.println("4. Back");
+        player.getInventory().displayPotions();
+        System.out.println("\nSelect potion to use (number) or 0 to go back:");
 
         int choice = PlayerPrompt.askNumber();
-        if (choice >= 1 && choice <= 3)
+        if (choice > 0)
         {
-            // Use selected potion
-            // player.usePotion(choice - 1);
+            player.getInventory().usePotion(choice - 1, player);
         }
-        idleMenu(player);
     }
 
     public static void combatMenu(Player player, Enemy enemy)
@@ -109,7 +105,7 @@ public class Menu
     private static void combatInventoryMenu(Player player, Enemy enemy)
     {
         System.out.println("\n=== COMBAT INVENTORY ===");
-        // Show combat-usable potions
+        System.out.println("\nYou can't use potions during combat, coward...");
         System.out.println("\nPress any number to return to combat...");
         PlayerPrompt.askNumber();
         combatMenu(player, enemy);
@@ -129,10 +125,10 @@ public class Menu
     {
         if (RandomGenerator.between(1, 100) > 50)
         {
-            System.out.println("Successfully fled!");
+            System.out.println("\nSuccessfully fled!... \n. . . . . Or did you really ?");
         } else
         {
-            System.out.println("Failed to flee!");
+            System.out.println("\nFailed to flee!");
 
         }
     }

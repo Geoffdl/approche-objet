@@ -16,7 +16,23 @@ public class PlayerPrompt
     public static int askNumber()
     {
         System.out.print("Enter your choice: ");
-        int choice = sc.nextInt();
+        int choice = 0;
+        boolean validInput = false;
+
+        while (!validInput)
+        {
+            System.out.print("Enter your choice: ");
+            try
+            {
+                String input = sc.nextLine();
+                choice = Integer.parseInt(input);
+                validInput = true;
+            } catch (NumberFormatException e)
+            {
+                System.out.println("Please enter a valid number.");
+            }
+        }
+
         return choice;
     }
 }

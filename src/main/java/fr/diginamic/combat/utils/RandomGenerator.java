@@ -1,6 +1,7 @@
 package fr.diginamic.combat.utils;
 
 import fr.diginamic.combat.items.RewardType;
+import fr.diginamic.combat.logic.Reward;
 
 import java.util.Random;
 
@@ -33,5 +34,10 @@ public class RandomGenerator
      *
      * @return element from enum RewardType
      */
-    public static RewardType selectReward() {return RewardType.values()[between(0, RewardType.values().length - 1)];}
+    public static Reward selectReward()
+    {
+        int randomIndex = between(0, RewardType.values().length - 1);
+        RewardType type = RewardType.values()[randomIndex];
+        return new Reward(type);
+    }
 }

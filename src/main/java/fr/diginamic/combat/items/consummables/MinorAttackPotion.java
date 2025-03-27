@@ -1,20 +1,34 @@
 package fr.diginamic.combat.items.consummables;
 
+import fr.diginamic.combat.characters.player.Player;
 import fr.diginamic.combat.items.Items;
 
-public class MinorAttackPotion extends Items implements Consummables
+public class MinorAttackPotion extends Items implements Consumables
 {
-    public MinorAttackPotion(String type, String name)
+    public MinorAttackPotion()
     {
-        super(type, name);
+
+    }
+
+    private static final int ATTACK_BONUS = 3;
+    private static final int DURATION = 1;
+
+    /**
+     * @param player
+     */
+    @Override
+    public void consume(Player player)
+    {
+        player.addAttackBonus(ATTACK_BONUS, DURATION);
+        System.out.println("Attack increased by " + ATTACK_BONUS + " for next combat!");
     }
 
     /**
-     *
+     * @return item description
      */
     @Override
-    public void consume()
+    public String getEffectDescription()
     {
-
+        return "Minor Attack Potion (+" + ATTACK_BONUS + " attack for " + DURATION + " combat)";
     }
 }
