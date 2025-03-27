@@ -3,18 +3,68 @@ package fr.diginamic.combat.characters.ennemies;
 import fr.diginamic.combat.characters.Characters;
 
 
-public abstract class Enemy extends Characters
+public class Enemy extends Characters
 {
-    private int score;
 
-    public enum ENEMY_TYPE
+    MonsterType type;
+
+    public Enemy(MonsterType type, int hp, int strength, int score)
     {
-        Goblin, Troll, Wolf
+        super(hp, strength, score);
+
+        this.type = type;
+
     }
 
-    public Enemy(int hp, int strength, int score)
+
+    public String displayMonsterData()
     {
-        super(hp, strength);
+        return this.type + " " + this.hp + " " + this.strength;
+    }
+
+    public void renderMonster()
+    {
+        //todo monster art
+    }
+
+
+    public MonsterType getType()
+    {
+        return type;
+    }
+
+    public void setType(MonsterType type)
+    {
+        this.type = type;
+    }
+
+    public void setScore(int score)
+    {
+        this.score = score;
+    }
+
+    public int getMonsterHp()
+    {
+        return this.hp;
+    }
+
+    public int getMonsterStrength()
+    {
+        return this.strength;
+    }
+
+    public void setMonsterHp(int hp)
+    {
+        this.hp = hp;
+    }
+
+    public int getMonsterScore()
+    {
+        return this.score;
+    }
+
+    public void setMonsterScore(int score)
+    {
         this.score = score;
     }
 }

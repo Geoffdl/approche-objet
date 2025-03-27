@@ -8,8 +8,15 @@ public class PlayerPrompt
 
     public static String askName()
     {
-        System.out.print("You look strong. What's your name?. . . ");
+        System.out.print("You look strong. What's your name?. . . :");
         String name = sc.next();
         return name;
+    }
+
+    public static int askNumber()
+    {
+        System.out.println("Enter your choice : ");
+        int choice = sc.nextInt();
+        return choice;
     }
 }

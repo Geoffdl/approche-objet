@@ -10,12 +10,19 @@ public class MoldusGate
 {
     public static void main(String[] args)
     {
+        setupGame();
 
-        Player player = new Player(PlayerPrompt.askName(), RandomGenerator.between(20, 50), RandomGenerator.between(12, 18));
+
+    }
+
+    public static void setupGame()
+    {
+
+        Player player = new Player(PlayerPrompt.askName(), RandomGenerator.between(20, 50), RandomGenerator.between(12, 18), 0);
         Enemy monster1 = EnemyFactory.createRandomEnemy();
 
 
-        System.out.println(player);
-        System.out.println(monster1);
+        System.out.println(player.getName());
+        System.out.println(monster1.displayMonsterData());
     }
 }
