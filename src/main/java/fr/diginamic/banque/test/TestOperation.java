@@ -4,8 +4,6 @@ import fr.diginamic.banque.Credit;
 import fr.diginamic.banque.Debit;
 import fr.diginamic.banque.Operation;
 
-import java.util.Objects;
-
 /*
 a. créez un tableau d’opérations avec au moins 4 opérations de crédits et de débits
 dans le tableau.
@@ -23,8 +21,10 @@ a. si c’est une opération au débit utilisez l’opérateur « – » pour le
 b. si c’est une opération au crédit, utilisez l’opérateur « + » pour le calcul.
  */
 
-public class TestOperation {
-    public static void main(String[] args) {
+public class TestOperation
+{
+    public static void main(String[] args)
+    {
         Operation[] operations = new Operation[4];
 
         operations[0] = new Credit("2024-03-25", 100.0);
@@ -44,7 +44,8 @@ public class TestOperation {
             }
         }*/
 
-        for (Operation operation : operations) {
+        for (Operation operation : operations)
+        {
             System.out.println(operation);
             balance = operation.calcBalance(balance);
         }
