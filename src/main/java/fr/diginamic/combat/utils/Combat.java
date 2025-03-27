@@ -44,25 +44,23 @@ public class Combat
 
         while (playerHp > 0 && monsterHp > 0)
         {
-            if (playerHp <= 0)
-            {
-                hasWon = false;
-                break;
-            }
+            enemy.renderMonster();
+
             turnOutcome(player, enemy);
+
             monsterHp = enemy.getMonsterHp();
             playerHp = player.getPlayerHp();
-
             System.out.println("\nYour current hp is " + playerHp + " and the " + enemy.getType().toString().toLowerCase() + "'s current hp is " + monsterHp);
-            System.out.println("Start next turn ?");
-            PlayerPrompt.askNumber();
+
+            if (monsterHp > 0)
+            {
+                System.out.println("Start next turn ?");
+                PlayerPrompt.askNumber();
+            }
         }
 
-        if (hasWon)
-        {
-            player.setPlayerScore(enemy.getMonsterScore());
-            System.out.println("\nThe " + enemy.getType().toString().toLowerCase() + " has been brutally slaughtered, good job! You earned " + enemy.getMonsterScore() + " points.");
-        }
+        player.setPlayerScore(enemy.getMonsterScore());
+        System.out.println("\nThe " + enemy.getType().toString().toLowerCase() + " has been brutally slaughtered, good job! You earned " + enemy.getMonsterScore() + " points.");
 
 
         return hasWon;

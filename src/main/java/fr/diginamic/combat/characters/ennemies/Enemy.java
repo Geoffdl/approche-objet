@@ -1,6 +1,7 @@
 package fr.diginamic.combat.characters.ennemies;
 
 import fr.diginamic.combat.characters.Characters;
+import fr.diginamic.combat.utils.MonsterArt;
 
 
 public class Enemy extends Characters
@@ -24,7 +25,12 @@ public class Enemy extends Characters
 
     public void renderMonster()
     {
-        //todo monster art
+        switch (this.type)
+        {
+            case WOLF -> System.out.println(MonsterArt.getWolf());
+            case TROLL -> System.out.println(MonsterArt.getTroll());
+            case GOBLIN -> System.out.println(MonsterArt.getGoblin());
+        }
     }
 
 

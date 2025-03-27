@@ -15,7 +15,7 @@ public class PlayerPrompt
 
     public static int askNumber()
     {
-        System.out.print("Enter your choice (1 to continue 2 to quit): ");
+        System.out.print("Enter your choice: ");
         int choice = sc.nextInt();
         return choice;
     }

@@ -49,4 +49,9 @@ public class Player extends Characters
         this.score = score;
     }
 
+    public String displayPlayerData()
+    {
+        return this.name + " " + this.hp + " " + this.strength + " " + this.score;
+    }
+
 }
