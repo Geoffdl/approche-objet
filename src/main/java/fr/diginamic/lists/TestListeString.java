@@ -44,6 +44,7 @@ public class TestListeString
             }
         } */
 
+
         Iterator<String> iterator = a.iterator();
         while (iterator.hasNext())
         {
@@ -58,7 +59,8 @@ public class TestListeString
             a.set(a.indexOf(current), upperCase);
 
             // Remove if starts with "N"
-            if (upperCase.startsWith("N"))
+            // if (upperCase.startsWith("N"))
+            if (upperCase.charAt(0) == 'N')
             {
                 System.out.println("Removing: " + upperCase.toLowerCase());
                 iterator.remove();

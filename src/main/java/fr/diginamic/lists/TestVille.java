@@ -43,23 +43,27 @@ public class TestVille
         Ville maxInhabitantsCity = cities.get(0);
         Ville city;
         System.out.println("\nCities with pop above 100 000 are :");
-        for (int i = 0; i < cities.size(); i++)
-        {
-            if (cities.get(i).inhabitants > maxInhabitantsCity.getInhabitants())
-            {
-                maxInhabitantsCity = cities.get(i);
-            }
 
-            if (cities.get(i).getInhabitants() >= 100_000)
+        for (Ville ville : cities)
+        {
+            //Find highest pop city
+            if (ville.inhabitants > maxInhabitantsCity.getInhabitants())
             {
-                city = cities.get(i);
+                maxInhabitantsCity = ville;
+            }
+            //Select cities within range and transform string
+            if (ville.getInhabitants() >= 100_000)
+            {
+                city = ville;
                 city.setName(city.getName().toUpperCase());
                 System.out.print(" " + city.getName() + "; ");
                 ;
             }
         }
 
+
         cities.sort(Comparator.comparing(Ville::getInhabitants));
+
         System.out.println("\n\nDeleting the city with lowest population: " + cities.getFirst());
         cities.removeFirst();
 

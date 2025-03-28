@@ -2,6 +2,7 @@ package fr.diginamic.lists;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 
 public class TestListeInt
@@ -9,7 +10,8 @@ public class TestListeInt
     public static void main(String[] args)
     {
 
-        ArrayList<Integer> a = new ArrayList<>();
+        ArrayList<Integer> a = new ArrayList<Integer>(List.of(-1, 5, 7, 3, -2, 4, 8, 5));
+       /* ArrayList<Integer> a = new ArrayList<>();
         a.add(-1);
         a.add(5);
         a.add(7);
@@ -18,6 +20,8 @@ public class TestListeInt
         a.add(4);
         a.add(8);
         a.add(5);
+
+        */
 
         /*Display all + size*/
         System.out.println("My array list: " + a);
