@@ -1,4 +1,4 @@
-package fr.diginamic.lists.test;
+package fr.diginamic.lists;
 /*
 Apprenez à manipuler une liste d’objets
 • Créez une classe Ville possédant 2 attributs : nom, nb d’habitants.
@@ -19,14 +19,14 @@ o Tarbes, 40 600 hab.
 • Affichez enfin la liste résultante
  */
 
-import fr.diginamic.lists.Ville;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 
-public class TestVille {
+public class TestVille
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         ArrayList<Ville> cities = new ArrayList<>();
 
@@ -44,12 +44,15 @@ public class TestVille {
         Ville maxInhabitantsCity = cities.get(0);
 
 
-        for (int i = 0; i < cities.size(); i++) {
-            if (cities.get(i).inhabitants > maxInhabitantsCity.getInhabitants()) {
+        for (int i = 0; i < cities.size(); i++)
+        {
+            if (cities.get(i).inhabitants > maxInhabitantsCity.getInhabitants())
+            {
                 maxInhabitantsCity = cities.get(i);
             }
 
-            if (cities.get(i).getInhabitants() >= 100_000) {
+            if (cities.get(i).getInhabitants() >= 100_000)
+            {
                 Ville city = cities.get(i);
                 city.setName(city.getName().toUpperCase());
             }

@@ -107,3 +107,4 @@ maven-wrapper.properties
 # High score files or save data (if you implement these)
 *.sav
 *.score
+/src/main/java/fr/diginamic/zduringclasses/

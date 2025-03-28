@@ -1,18 +1,17 @@
-package fr.diginamic.geometrie.test;
+package fr.diginamic.geometrie;
 
-import fr.diginamic.geometrie.Cercle;
-import fr.diginamic.geometrie.ObjetGeometrique;
-import fr.diginamic.geometrie.Rectangle;
-
-public class TestGeometrique {
-    public static void main(String[] args) {
+public class TestGeometrique
+{
+    public static void main(String[] args)
+    {
 
         ObjetGeometrique[] formes = new ObjetGeometrique[2];
 
         formes[0] = new Cercle(4.0);
         formes[1] = new Rectangle(4.0, 8.0);
 
-        for (ObjetGeometrique forme : formes) {
+        for (ObjetGeometrique forme : formes)
+        {
 
             System.out.println("Forme : " + forme.getClass().getSimpleName());
             System.out.println("Périmètre : " + forme.perimetre());

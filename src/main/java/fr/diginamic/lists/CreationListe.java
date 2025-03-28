@@ -13,6 +13,6 @@ public class CreationListe
         {
             a.add(i);
         }
-        System.out.println("a à une taille de : " + a.size() + "\na contient " + a);
+        System.out.println("the size of a is: " + a.size() + "\nIt contains " + a);
     }
 }
