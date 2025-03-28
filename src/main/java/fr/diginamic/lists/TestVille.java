@@ -27,7 +27,6 @@ public class TestVille
 
     public static void main(String[] args)
     {
-
         ArrayList<Ville> cities = new ArrayList<>();
 
         cities.add(new Ville("Nice", 343_000));
@@ -39,11 +38,11 @@ public class TestVille
         cities.add(new Ville("Marseille", 850_700));
         cities.add(new Ville("Tarbes", 40_600));
 
-        System.out.println(cities);
+        System.out.println("\n" + cities);
 
         Ville maxInhabitantsCity = cities.get(0);
-
-
+        Ville city;
+        System.out.println("\nCities with pop above 100 000 are :");
         for (int i = 0; i < cities.size(); i++)
         {
             if (cities.get(i).inhabitants > maxInhabitantsCity.getInhabitants())
@@ -53,15 +52,18 @@ public class TestVille
 
             if (cities.get(i).getInhabitants() >= 100_000)
             {
-                Ville city = cities.get(i);
+                city = cities.get(i);
                 city.setName(city.getName().toUpperCase());
+                System.out.print(" " + city.getName() + "; ");
+                ;
             }
         }
 
         cities.sort(Comparator.comparing(Ville::getInhabitants));
+        System.out.println("\n\nDeleting the city with lowest population: " + cities.getFirst());
         cities.removeFirst();
 
-        System.out.println("Sorted by pop :\n" + cities);
+        System.out.println("\nSorted by pop :\n" + cities);
         System.out.println("The city with highest pop is: " + maxInhabitantsCity.getName());
     }
 

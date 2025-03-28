@@ -1,4 +1,4 @@
-package fr.diginamic.lists.test;
+package fr.diginamic.lists;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,6 +31,8 @@ public class TestListeInt
         //remove smallest
         a.removeFirst();
         System.out.println("tiniest removed : " + a);
+
+        //flip to absolute value
         for (int i = 0; i < a.size(); i++)
         {
             if (a.get(i) < 0)

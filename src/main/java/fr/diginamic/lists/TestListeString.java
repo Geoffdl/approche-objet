@@ -45,7 +45,6 @@ public class TestListeString
         } */
 
         Iterator<String> iterator = a.iterator();
-        String startswithChar = "";
         while (iterator.hasNext())
         {
             String current = iterator.next();
