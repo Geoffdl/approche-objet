@@ -5,13 +5,14 @@ import fr.diginamic.combat.items.Items;
 
 public class MinorAttackPotion extends Items implements Consumables
 {
+    private static final int ATTACK_BONUS = 3;
+    private static final int DURATION = 1;
+
     public MinorAttackPotion()
     {
 
     }
 
-    private static final int ATTACK_BONUS = 3;
-    private static final int DURATION = 1;
 
     /**
      * @param player

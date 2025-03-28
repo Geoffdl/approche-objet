@@ -8,14 +8,15 @@ public class PlayerPrompt
 
     public static String askName()
     {
-        System.out.print("You look strong. What's your name?. . . :");
+        System.out.print("\nYou look strong. What's your name?. . . :");
         String name = sc.next();
+        System.out.println("\nGet ready " + name + " an endless hoard of monsters is approaching quickly! Use all of the tools at your disposal to dispose of them! \n\n Good luck!");
         return name;
     }
 
     public static int askNumber()
     {
-        System.out.print("Enter your choice: ");
+
         int choice = 0;
         boolean validInput = false;
 
