@@ -16,7 +16,6 @@ public class RecherchePopulationVille extends MenuService
     public void traiter(Recensement recensement, Scanner scanner)
     {
         {
-            // Ask for input
             scanner.nextLine();
             System.out.print("Veuillez entrer le nom de la ville recherchée :");
             String nomVille = scanner.nextLine();
@@ -32,7 +31,6 @@ public class RecherchePopulationVille extends MenuService
                 }
             }
 
-            // Display results
             if (population > 0)
             {
                 System.out.printf("Population de %s %,d habitants \n",

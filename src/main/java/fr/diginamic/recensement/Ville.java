@@ -19,24 +19,9 @@ public class Ville
         this.populationTotal = populationTotal;
     }
 
-    public int getCodeRegion()
-    {
-        return codeRegion;
-    }
-
-    public void setCodeRegion(int codeRegion)
-    {
-        this.codeRegion = codeRegion;
-    }
-
     public String getRegion()
     {
         return region;
-    }
-
-    public void setRegion(String region)
-    {
-        this.region = region;
     }
 
     public String getCodeDepartement()
@@ -44,19 +29,9 @@ public class Ville
         return codeDepartement;
     }
 
-    public void setCodeDepartement(String codeDepartement)
-    {
-        this.codeDepartement = codeDepartement;
-    }
-
     public int getCodeCommune()
     {
         return codeCommune;
-    }
-
-    public void setCodeCommune(int codeCommune)
-    {
-        this.codeCommune = codeCommune;
     }
 
     public String getCommuneNom()
@@ -64,19 +39,9 @@ public class Ville
         return communeNom;
     }
 
-    public void setCommuneNom(String communeNom)
-    {
-        this.communeNom = communeNom;
-    }
-
     public int getPopulationTotal()
     {
         return populationTotal;
-    }
-
-    public void setPopulationTotal(int populationTotal)
-    {
-        this.populationTotal = populationTotal;
     }
 
     @Override
