@@ -31,6 +31,7 @@ public class LectureFichier
 
         //Transform content and store inside arrayList
         String[] tokens = new String[10];
+
         for (int i = 1; i < lines.size(); i++)
         {
             String line = lines.get(i);
@@ -54,16 +55,20 @@ public class LectureFichier
         List<String> outputLines = new ArrayList<>();
 
         //header
-        outputLines.add(lines.getFirst());
+        outputLines.add("Nom; Code Departement; Nom de la Region; Population Totale");
 
         for (Ville city : cities)
         {
-            String cityLine = String.format("%s;%s;%s;%d",
-                    city.getName(),
-                    city.getDptCode(),
-                    city.getRegionName(),
-                    city.getPopulation());
-            outputLines.add(cityLine);
+            if (city.getPopulation() >= 25000)
+            {
+
+                String cityLine = String.format("%s;%s;%s;%d",
+                        city.getName(),
+                        city.getDptCode(),
+                        city.getRegionName(),
+                        city.getPopulation());
+                outputLines.add(cityLine);
+            }
         }
 
         // append formated body
