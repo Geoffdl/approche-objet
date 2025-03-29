@@ -46,16 +46,13 @@ public class Ville implements Comparable<Ville>
     @Override
     public String toString()
     {
-        if (regionName == null || departmentCode == 0)
-        {
-            // Simple version for constructor with just name and inhabitants
-            return String.format("%s : %d habitants", name, inhabitants);
-        } else
-        {
-            // Detailed version for constructor with all fields
-            return String.format("%s (département %d, région %s) : %d habitants",
-                    name, departmentCode, regionName, inhabitants);
-        }
+        final StringBuilder sb = new StringBuilder("Ville{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", inhabitants=").append(inhabitants);
+        sb.append(", departmentCode=").append(departmentCode);
+        sb.append(", regionName='").append(regionName).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 
     /*

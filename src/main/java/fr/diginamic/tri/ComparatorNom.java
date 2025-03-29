@@ -1,4 +1,6 @@
-package fr.diginamic.lists;
+package fr.diginamic.tri;
+
+import fr.diginamic.lists.Ville;
 
 import java.util.Comparator;
 

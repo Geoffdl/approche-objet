@@ -1,14 +1,13 @@
 package fr.diginamic.tri;
 
-import fr.diginamic.lists.ComparatorHabitant;
-import fr.diginamic.lists.ComparatorNom;
 import fr.diginamic.lists.Ville;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
-public class TestTri {
-    public static void main(String[] args) {
+public class TestTri
+{
+    public static void main(String[] args)
+    {
 
         ArrayList<Ville> cities = new ArrayList<>();
 
@@ -23,12 +22,13 @@ public class TestTri {
 
         System.out.println(cities);
 
-//        Collections.sort(cities);
 
+        //sort by pop with Class ComparatorHabitant
         ComparatorHabitant compByPop = new ComparatorHabitant();
         cities.sort(compByPop);
         System.out.println(cities);
 
+        //sort by Name with Class ComparatorNom
         ComparatorNom compByName = new ComparatorNom();
         cities.sort(compByName);
         System.out.println(cities);
