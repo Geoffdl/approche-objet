@@ -8,8 +8,10 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreerFichier {
-    public static void main(String[] args) throws IOException {
+public class CreerFichier
+{
+    public static void main(String[] args) throws IOException
+    {
 
         Path pathFile = Paths.get("src/main/java/fr/diginamic/fichier/recensement.csv");
         Path outputFile = Paths.get("src/main/java/fr/diginamic/fichier/recensement_100.csv");
@@ -20,10 +22,12 @@ public class CreerFichier {
         List<String> lines = Files.readAllLines(pathFile, StandardCharsets.UTF_8);
         List<String> first100Lines = new ArrayList<>();
 
-
+        //header line
         first100Lines.add(lines.get(0));
 
-        for (int i = 1; i < 100; i++) {
+        //first 100 entries
+        for (int i = 1; i <= 100; i++)
+        {
             System.out.println(lines.get(i));
             first100Lines.add(lines.get(i));
 
