@@ -1,12 +1,14 @@
 package fr.diginamic.lists;
 
+import fr.diginamic.testenumeration.Continent;
+
 public class Ville implements Comparable<Ville>
 {
     public String name;
     public int inhabitants;
     public int departmentCode;
     public String regionName;
-
+    public Continent continent;
 
     public Ville(String name, int inhabitants)
     {
@@ -20,6 +22,13 @@ public class Ville implements Comparable<Ville>
         this.departmentCode = departmentCode;
         this.regionName = regionName;
         this.inhabitants = inhabitants;
+    }
+
+    public Ville(String name, int inhabitants, Continent continent)
+    {
+        this.name = name;
+        this.inhabitants = inhabitants;
+        this.continent = continent;
     }
 
 
@@ -51,6 +60,7 @@ public class Ville implements Comparable<Ville>
         sb.append(", inhabitants=").append(inhabitants);
         sb.append(", departmentCode=").append(departmentCode);
         sb.append(", regionName='").append(regionName).append('\'');
+        sb.append(", continent=").append(continent);
         sb.append('}');
         return sb.toString();
     }
@@ -67,5 +77,35 @@ public class Ville implements Comparable<Ville>
     public int compareTo(Ville o)
     {
         return Integer.compare(this.inhabitants, o.inhabitants);
+    }
+
+    public Continent getContinent()
+    {
+        return continent;
+    }
+
+    public void setContinent(Continent continent)
+    {
+        this.continent = continent;
+    }
+
+    public String getRegionName()
+    {
+        return regionName;
+    }
+
+    public void setRegionName(String regionName)
+    {
+        this.regionName = regionName;
+    }
+
+    public int getDepartmentCode()
+    {
+        return departmentCode;
+    }
+
+    public void setDepartmentCode(int departmentCode)
+    {
+        this.departmentCode = departmentCode;
     }
 }
