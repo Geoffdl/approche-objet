@@ -1,9 +1,13 @@
 package fr.diginamic.recensement.services;
 
-import fr.diginamic.recensement.MenuService;
-import fr.diginamic.recensement.Recensement;
+import fr.diginamic.recensement.model.Recensement;
+import fr.diginamic.recensement.model.Region;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
+
+import static java.lang.Integer.parseInt;
 
 public class AffichageTopDepartements extends MenuService
 {
@@ -14,6 +18,23 @@ public class AffichageTopDepartements extends MenuService
     @Override
     public void traiter(Recensement recensement, Scanner scanner)
     {
+        scanner.nextLine();
+        //TODO fix method
+        HashMap<String, Integer> mapDepartments = Region.getRegionPopulation(recensement);
 
+        System.out.print("Jusqu'à combien souhaitez vous voir les départements triés ? : ");
+        String limit = scanner.nextLine();
+        int limitToInt = parseInt(limit);
+        System.out.println("Top 10 départements les plus peuplés:");
+        mapDepartments.entrySet().stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .limit(limitToInt)
+                .forEach(entry -> System.out.printf("Département %s: %,d habitants%n",
+                        entry.getKey(),
+                        entry.getValue()));
+
+        System.out.println("\nAppuyez sur Entrée pour continuer...");
+        scanner.nextLine();
     }
+
 }

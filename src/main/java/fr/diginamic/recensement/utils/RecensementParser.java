@@ -1,6 +1,6 @@
 package fr.diginamic.recensement.utils;
 
-import fr.diginamic.recensement.Ville;
+import fr.diginamic.recensement.model.Ville;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

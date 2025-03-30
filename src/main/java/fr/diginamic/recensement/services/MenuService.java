@@ -1,4 +1,6 @@
-package fr.diginamic.recensement;
+package fr.diginamic.recensement.services;
+
+import fr.diginamic.recensement.model.Recensement;
 
 import java.util.Scanner;
 

@@ -16,4 +16,5 @@ public class MenuDisplay
 
         System.out.print("\nVotre choix: ");
     }
+
 }

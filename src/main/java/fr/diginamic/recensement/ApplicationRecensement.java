@@ -1,5 +1,7 @@
 package fr.diginamic.recensement;
 
+import fr.diginamic.recensement.model.Recensement;
+import fr.diginamic.recensement.model.Ville;
 import fr.diginamic.recensement.services.*;
 import fr.diginamic.recensement.utils.MenuDisplay;
 import fr.diginamic.recensement.utils.RecensementParser;

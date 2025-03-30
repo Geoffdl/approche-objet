@@ -1,8 +1,7 @@
 package fr.diginamic.recensement.services;
 
-import fr.diginamic.recensement.MenuService;
-import fr.diginamic.recensement.Recensement;
-import fr.diginamic.recensement.Ville;
+import fr.diginamic.recensement.model.Recensement;
+import fr.diginamic.recensement.model.Ville;
 import fr.diginamic.recensement.utils.ComparatorPopulation;
 
 import java.util.ArrayList;

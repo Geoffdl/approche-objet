@@ -1,4 +1,4 @@
-package fr.diginamic.recensement;
+package fr.diginamic.recensement.model;
 
 public class Ville
 {

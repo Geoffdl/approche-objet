@@ -1,8 +1,7 @@
 package fr.diginamic.recensement.services;
 
-import fr.diginamic.recensement.MenuService;
-import fr.diginamic.recensement.Recensement;
-import fr.diginamic.recensement.Ville;
+import fr.diginamic.recensement.model.Recensement;
+import fr.diginamic.recensement.model.Ville;
 
 import java.util.Scanner;
 
@@ -39,6 +38,8 @@ public class RecherchePopulationVille extends MenuService
             {
                 System.out.println(nomVille + " : Ville non trouvée.");
             }
+            System.out.println("\nAppuyez sur Entrée pour continuer...");
+            scanner.nextLine();
         }
     }
 }

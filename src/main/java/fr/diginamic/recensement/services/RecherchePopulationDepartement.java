@@ -1,8 +1,7 @@
 package fr.diginamic.recensement.services;
 
-import fr.diginamic.recensement.Departement;
-import fr.diginamic.recensement.MenuService;
-import fr.diginamic.recensement.Recensement;
+import fr.diginamic.recensement.model.Departement;
+import fr.diginamic.recensement.model.Recensement;
 
 import java.util.HashMap;
 import java.util.Scanner;
