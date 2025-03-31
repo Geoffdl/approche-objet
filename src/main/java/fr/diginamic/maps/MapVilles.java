@@ -15,7 +15,7 @@ public class MapVilles
         a.put("Tom", new Ville("Tom", 12, "Veggies", 132131));
         a.put("Pom", new Ville("Pom", 23, "Fruits", 2323223));
         a.put("Grom", new Ville("Grom", 98, "Meat", 4545545));
-        a.put("Vrom", new Ville("Vrom", 64, "Trees", 755657));
+        a.put("Vrom", new Ville("Vrom", 64, "Trees", 20));
         a.put("Dom", new Ville("Dom", 33, "Wind", 307897));
         a.put("Slom", new Ville("Slom", 69, "Earth", 98));
 
@@ -28,6 +28,7 @@ public class MapVilles
 
         Ville lowestPopCity = null;
         String lowestPopKey = null;
+
         //setting lowest pop
         for (Map.Entry<String, Ville> entry : a.entrySet())
         {
@@ -38,8 +39,9 @@ public class MapVilles
             }
         }
         //deleting
+        System.out.println(a.size());
         System.out.println("Removing: " + lowestPopKey);
-        
+
         a.remove(lowestPopKey);
 
         // display all
@@ -47,5 +49,6 @@ public class MapVilles
         {
             System.out.println(ville.getValue());
         }
+        System.out.println(a.size());
     }
 }

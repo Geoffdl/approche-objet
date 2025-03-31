@@ -20,16 +20,16 @@ public class ComptagePaysParContinent
 
 
         //count number of countries per continents using hashmap
-        HashMap<String, Integer> countCountriesPerContinent = new HashMap<>();
+        HashMap<String, Integer> countContinent = new HashMap<>();
 
         for (Pays pays : al)
         {
             String continent = pays.getContinent();
-            countCountriesPerContinent.put(continent,
-                    countCountriesPerContinent.getOrDefault(continent, 0) + 1);
+            countContinent.put(continent,
+                    countContinent.getOrDefault(continent, 0) + 1);
         }
-        System.out.println(countCountriesPerContinent);
 
+        System.out.println(countContinent);
 
     }
 }

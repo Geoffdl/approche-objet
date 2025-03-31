@@ -13,6 +13,7 @@ public class TestEnumeration
         }
 
         String name = "SUMMER";
+        System.out.println();
         System.out.println(Season.valueOf(name));
 
         String label = "Winter";

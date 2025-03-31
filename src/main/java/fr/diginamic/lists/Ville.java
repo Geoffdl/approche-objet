@@ -55,7 +55,7 @@ public class Ville implements Comparable<Ville>
     @Override
     public String toString()
     {
-        final StringBuilder sb = new StringBuilder("Ville{");
+        final StringBuilder sb = new StringBuilder("\nVille{");
         sb.append("name='").append(name).append('\'');
         sb.append(", inhabitants=").append(inhabitants);
         sb.append(", departmentCode=").append(departmentCode);
