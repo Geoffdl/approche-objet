@@ -8,6 +8,8 @@ import java.util.Scanner;
 public class RecherchePopulationVille extends MenuService
 {
     /**
+     * Recherche de la population pour une ville donnée
+     *
      * @param recensement
      * @param scanner
      */

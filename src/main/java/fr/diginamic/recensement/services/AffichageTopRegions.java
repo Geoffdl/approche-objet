@@ -12,6 +12,8 @@ import static java.lang.Integer.parseInt;
 public class AffichageTopRegions extends MenuService
 {
     /**
+     * Affichage des N régions les plus peuplées;
+     *
      * @param recensement
      * @param scanner
      */
@@ -21,8 +23,8 @@ public class AffichageTopRegions extends MenuService
         scanner.nextLine();
 
         HashMap<String, Integer> mapRegions = Region.getRegionPopulation(recensement);
-        //TODO fix method
-        System.out.print("Jusqu'à combien souhaitez vous voir les régions triées ? : ");
+
+        System.out.print("Combien de régions souhaitez vous voir les régions triées ? : ");
         String limit = scanner.nextLine();
         int limitToInt = parseInt(limit);
         System.out.println("Top 10 region les plus peuplés:");

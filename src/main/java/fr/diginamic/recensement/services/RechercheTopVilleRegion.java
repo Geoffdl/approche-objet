@@ -11,6 +11,8 @@ import java.util.Scanner;
 public class RechercheTopVilleRegion extends MenuService
 {
     /**
+     * Recherche les 10 villes les plus peuplées dans une région donnée
+     *
      * @param recensement
      * @param scanner
      */

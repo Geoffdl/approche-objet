@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class RecherchePopulationRegion extends MenuService
 {
     /**
+     * Recherche de la population pour une région donnée
+     *
      * @param recensement
      * @param scanner
      */
