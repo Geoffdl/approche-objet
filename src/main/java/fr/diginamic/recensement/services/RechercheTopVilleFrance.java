@@ -10,6 +10,8 @@ import java.util.Scanner;
 public class RechercheTopVilleFrance extends MenuService
 {
     /**
+     * Recherche les 10 villes les plus peuplées en France
+     *
      * @param recensement
      * @param scanner
      */

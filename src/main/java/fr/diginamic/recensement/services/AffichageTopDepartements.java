@@ -12,6 +12,8 @@ import static java.lang.Integer.parseInt;
 public class AffichageTopDepartements extends MenuService
 {
     /**
+     * Affichage des N départements les plus peuplés
+     *
      * @param recensement
      * @param scanner
      */
@@ -19,10 +21,10 @@ public class AffichageTopDepartements extends MenuService
     public void traiter(Recensement recensement, Scanner scanner)
     {
         scanner.nextLine();
-        //TODO fix method
+
         HashMap<String, Integer> mapDepartments = Region.getRegionPopulation(recensement);
 
-        System.out.print("Jusqu'à combien souhaitez vous voir les départements triés ? : ");
+        System.out.print("Combien de départements souhaitez-vous voir les départements triés ? : ");
         String limit = scanner.nextLine();
         int limitToInt = parseInt(limit);
         System.out.println("Top 10 départements les plus peuplés:");

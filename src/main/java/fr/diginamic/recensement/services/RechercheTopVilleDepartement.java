@@ -11,6 +11,8 @@ import java.util.Scanner;
 public class RechercheTopVilleDepartement extends MenuService
 {
     /**
+     * Recherche les 10 villes les plus peuplées dans un département donné
+     *
      * @param recensement
      * @param scanner
      */

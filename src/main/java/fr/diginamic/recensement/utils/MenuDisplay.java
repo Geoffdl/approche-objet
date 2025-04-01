@@ -4,6 +4,7 @@ public class MenuDisplay
 {
     public static void display()
     {
+        System.out.println("\n ==================== RECENSEMENT POPULATION ====================");
         System.out.println("\n1. Population d'une ville donnée");
         System.out.println("2. Population d'un département donné");
         System.out.println("3. Population d'une région donnée");
