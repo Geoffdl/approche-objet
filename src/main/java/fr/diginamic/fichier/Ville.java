@@ -1,5 +1,6 @@
 package fr.diginamic.fichier;
 
+
 public class Ville
 {
     private String name;

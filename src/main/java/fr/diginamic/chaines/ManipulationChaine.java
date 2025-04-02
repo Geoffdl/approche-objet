@@ -4,6 +4,7 @@ import fr.diginamic.entites.Salarie;
 
 import java.util.Arrays;
 
+
 public class ManipulationChaine
 {
     public static void main(String[] args)
@@ -28,5 +29,6 @@ public class ManipulationChaine
         Salarie myAverageShortNameForASalaryManInComputerScience = new Salarie(myArray[0], myArray[1], dudeMoney);
 
         System.out.println(myAverageShortNameForASalaryManInComputerScience);
+
     }
 }

@@ -34,6 +34,7 @@ public class AffichageTopDepartements extends MenuService
                 .forEach(entry -> System.out.printf("Département %s: %,d habitants%n",
                         entry.getKey(),
                         entry.getValue()));
+        
 
         System.out.println("\nAppuyez sur Entrée pour continuer...");
         scanner.nextLine();
