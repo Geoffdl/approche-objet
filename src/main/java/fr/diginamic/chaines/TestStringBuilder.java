@@ -6,10 +6,10 @@ public class TestStringBuilder
     {
 
 
+        long debut = System.currentTimeMillis();
         StringBuilder a = new StringBuilder();
 
-        long debut = System.currentTimeMillis();
-        for (int i = 0; i < 1_000_000; i++)
+        for (int i = 0; i < 100_000; i++)
         {
             a.append(i);
         }
@@ -23,14 +23,16 @@ public class TestStringBuilder
 
         // See you in a year
         long start = System.currentTimeMillis();
-        for (int i = 0; i < 1_000_000; i++)
+        for (int i = 0; i < 100_000; i++)
         {
-            b += i;
-            System.out.println(b);
-        }
+            b = b + i;
 
+
+        }
+        
         long finish = System.currentTimeMillis();
         System.out.println("Elapsed time in milisec: " + (finish - start));
     }
+
 
 }

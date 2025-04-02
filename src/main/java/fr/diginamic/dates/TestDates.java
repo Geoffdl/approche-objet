@@ -18,5 +18,13 @@ public class TestDates
 
         Date sysTime = new Date();
         System.out.println(completeformat.format(sysTime));
+
+        TestDates.testtag();
     }
+
+    /**
+     * utilisez une autre methode
+     */
+    @Deprecated(since = "1.2")
+    public static void testtag() {}
 }

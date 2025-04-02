@@ -25,19 +25,20 @@ public class TestCalendar
         System.out.println(format.format(date));
 
         //today
-        Calendar cal2 = Calendar.getInstance();
-        Date today = cal.getTime();
+        Date today = Calendar.getInstance().getTime();
 
-        SimpleDateFormat anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH'h'", Locale.FRANCE);
+
+        SimpleDateFormat anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm", Locale.FRANCE);
         System.out.println(anotherFormat.format(today));
 
-        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH'h'", new Locale("ru", "RU"));
+        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm", Locale.of("ru", "RU"));
+//        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm", new Locale("ru", "RU")); // <- deprecated
         System.out.println(anotherFormat.format(today));
 
-        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH'h'", Locale.CHINA);
+        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm", Locale.CHINA);
         System.out.println(anotherFormat.format(today));
 
-        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH'h'", Locale.GERMAN);
+        anotherFormat = new SimpleDateFormat("EEEE dd MMMM yyyy HH:mm", Locale.GERMANY);
         System.out.println(anotherFormat.format(today));
 
 
