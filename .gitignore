@@ -93,10 +93,9 @@ $RECYCLE.BIN/
 .idea
 *.idea
 /.idea
-*.iml
 mvnw
 mvnw.cmd
-*.xml
+
 maven-wrapper.properties
 /.mvn
 *.csv
