@@ -1,66 +1,18 @@
-package fr.diginamic.sets;
+package fr.diginamic.utils;
 
-import fr.diginamic.annotations.Rule;
 import fr.diginamic.annotations.ToString;
 
 import java.lang.reflect.Field;
 
-public class Pays
+public class StringUtils
 {
-    @ToString(uppercase = true, separator = "-> ")
-    private String name;
-    @ToString(uppercase = true, separator = "m.hab")
-    @Rule(minval = 1000)
-    private int population;
-
-    private double gdp;
-
-    public Pays(String name, int population, double gdp)
-    {
-
-        this.name = name;
-        this.population = population;
-        this.gdp = gdp;
-    }
-
-    public String getName()
-    {
-        return name;
-    }
-
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-
-    public int getPopulation()
-    {
-        return population;
-    }
-
-    public void setPopulation(int population)
-    {
-        this.population = population;
-    }
-
-    public double getGdp()
-    {
-        return gdp;
-    }
-
-    public void setGdp(double gdp)
-    {
-        this.gdp = gdp;
-    }
-
-    @Override
-    public String toString()
+    public static String BeautifyStringMethodUtilytaryTool(Object obj)
     {
         StringBuilder sb = new StringBuilder();
 
-        sb.append("Beautiful pres` ").append(getClass().getSimpleName()).append(" (");
+        sb.append("Beautiful pres` ").append(obj.getClass().getSimpleName()).append(" (");
 
-        Field[] fields = getClass().getDeclaredFields();
+        Field[] fields = obj.getClass().getDeclaredFields();
 
         for (Field f : fields)
         {
@@ -70,7 +22,7 @@ public class Pays
 
                 try
                 {
-                    Object val = f.get(this);
+                    Object val = f.get(obj);
                     ToString annotation = f.getAnnotation(ToString.class);
                     if (val instanceof String && annotation.uppercase())
                     {
@@ -99,4 +51,5 @@ public class Pays
         sb.append(") ");
         return sb.toString();
     }
+
 }
